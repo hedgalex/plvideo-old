@@ -1,0 +1,26 @@
+{
+  "include": [
+    "src/**/*",
+    "./styles.d.ts"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "jsx": "react",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl": "./",
+    "paths": {
+      "~app/*": ["./src/app/*"],
+      "~ui/*": ["./src/ui/*"],
+      "~components/*": ["./src/app/content/components/*"],
+      "~page/*": ["./src/app/content/entities/page/*"],
+      "~store/*": ["./src/app/store/*"],
+      "~tasks/*": ["./src/app/tasks/*"],
+      "~utils": ["./src/utils/index.ts"],
+      "~shared/*": ["../shared/*"]
+    },
+    "rootDirs": [
+      "./src",
+      "../shared"
+    ]
+  }
+}

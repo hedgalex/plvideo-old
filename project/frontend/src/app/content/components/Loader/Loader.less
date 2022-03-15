@@ -1,0 +1,28 @@
+.loader {
+  padding-top: 20px;
+  text-align: center;
+
+  &__text {
+    color: #eeeeee;
+  }
+
+  &__spinner {
+    display: inline-block;
+    border: 2px solid rgba(132, 132, 132, 0.2);
+    border-radius: 50%;
+    border-top-color: #eeeeee;
+    margin: 15px auto;
+    width: 25px;
+    height: 25px;
+    transition: opacity 250ms;
+    animation: rotate-spinner 1s linear;
+    animation-iteration-count: infinite;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}

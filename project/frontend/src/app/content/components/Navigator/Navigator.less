@@ -1,0 +1,49 @@
+@import '~app/content/Content.less';
+
+.header {
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%,rgba(255,255,255,0) 100%);
+  height: 1px;
+}
+
+.nav {
+  position: relative;
+
+  &__search {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0 4px 0 0;
+    width: 100%;
+    height: 30px;
+    font-size: 12pt;
+  }
+
+  &__item {
+    background: transparent;
+
+    &__active {
+      background: #333333;
+    }
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: @menu-color;
+    text-shadow: 0px 0px 4px @black;
+
+    &:hover {
+      color: @menu-hover;    
+    }
+  }
+
+  &__provider {
+    text-align: center; 
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+  }
+
+}

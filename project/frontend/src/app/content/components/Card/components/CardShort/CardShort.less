@@ -1,0 +1,66 @@
+.card {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgba(10, 10, 10, 0.2);
+  border-radius: 10px;
+  background: rgba(10, 10, 10, 0.2);
+  width: 300px;
+  height: 320px;
+  margin: 0 50px 40px 0;
+
+  &__image {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+    
+    &:hover {
+      box-shadow: 0 0 7px white;
+    }
+  }
+
+  &__year {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: small;
+  }
+
+  &__actions {
+    position: absolute;
+    bottom: 10px;
+    right: 11px;
+  }
+
+  &__progress {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+  }
+
+  &.idle {
+    background: rgba(149, 145, 42, 0.1);
+
+    &:hover {
+      background: rgba(149, 145, 42, 0.4);
+    }
+  }
+
+  &.inProgress {
+    background: rgba(149, 145, 42, 0.1);
+
+    &:hover {
+      background: rgba(149, 145, 42, 0.4);
+    }
+  }
+
+  &.ready {
+    background: rgba(42, 149, 65, 0.1);
+
+    &:hover {
+      background: rgba(42, 149, 65, 0.4);
+    }
+  }
+}

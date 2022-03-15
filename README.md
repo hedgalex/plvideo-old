@@ -1,2 +1,15 @@
-# plvideo
-Download the videos you like to watch them on a TV with Plex
+This is an application is the easier way to download videos to a server, sort them out and prepare to watch with the Plex Application.
+
+Install the database through docker:
+`docker-compose up`
+
+Create tables and data:
+`cd <path to project>/project/backend && npm run db:install` 
+
+Run the backend part:
+`cd <path to project>/project/backend && npm start`
+
+Build the frontend part (optional):
+`cd <path to project>/project/frontend && npm start`
+
+Run http://localhost:3000 in a browser.

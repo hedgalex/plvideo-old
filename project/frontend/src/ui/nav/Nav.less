@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__item {
+    min-width: 160px;
+    padding: 6px 12px;
+    overflow: hidden;
+    min-height: 48px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+  
+    &.active {
+      color: #000;
+    }  
+    
+    :focus {
+      border: 0;
+      outline: 0;
+    }
+  }
+  
+  &.vertical {
+    flex-direction: column;
+  }
+}

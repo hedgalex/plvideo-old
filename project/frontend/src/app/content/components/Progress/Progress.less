@@ -1,0 +1,56 @@
+@color1: white;
+@color2: rgba(255,255,255, 0.2);
+@color3: rgba(255,255,255, 0.2);
+
+.progress {
+  
+  span {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+    color: white;
+  }
+
+  i {
+    display: block;
+    text-align: center;
+    clip-path: polygon(25% 20%, 75% 20%, 75% 50%, 88% 50%, 50% 80%, 12% 50%, 25% 50%);
+    width: 30px;
+    height: 30px;
+    font-family: sans-serif;
+    
+    &.idle {
+      background: @color2;
+    }
+
+    &.progress25 {
+      background: linear-gradient(0deg, @color1 0%, @color1 15%, @color3 35%, @color3 100%);
+    }
+
+    &.progress50 {
+      background: linear-gradient(0deg, @color1 0%, @color1 25%, @color3 45%, @color3 100%);
+    }
+    
+    &.progress75 {
+      background: linear-gradient(0deg, @color1 0%, @color1 50%, @color3 70%, @color3 100%);
+    }
+
+    &.progress99 {
+      background: linear-gradient(0deg, @color1 0%, @color1 70%, @color3 90%, @color3 100%);
+    }
+
+    &.ready {
+      background: @color1;
+    }
+
+    &.downloaded {
+      background: @color1;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+

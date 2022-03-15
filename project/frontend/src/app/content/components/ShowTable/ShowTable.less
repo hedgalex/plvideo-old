@@ -1,0 +1,107 @@
+@import '~app/content/Content.less';
+
+.showsTable {
+  box-shadow: 0 0 3px 0 rgba(10, 10, 10, 0.1);
+  border-radius: 10px;
+
+  &__empty:extend(.text-with-shadow) {
+    text-align: center;
+    background: @menu-item-background-color;
+    padding: 9px 4px 5px;
+    border-radius: 10px;
+  }
+}
+
+.showRow {
+  display: flex;
+  flex-direction: row;
+  background: @menu-item-background-color;
+  border-bottom: 1px solid @menu-item-border-color;
+  padding: 9px 4px 5px;
+
+  &:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 0;
+  }
+
+  &:hover {
+    background: @menu-item-background-hover-color;
+  }
+
+  .progress {
+    margin: 0 14px;
+    width: 30px;
+  }
+
+  .info {
+    flex-grow: 1;
+  
+    h3 { 
+      padding: 0;
+      margin: 0; 
+      color: @menu-item-title-color;
+      font-weight: normal;
+      text-shadow: 0 0 1px @black;
+      
+      a {
+        color: @menu-item-title-color;
+        text-decoration: none;
+  
+        a:hover {
+          text-decoration: underline;  
+        }
+      }
+    }
+  
+    h4 { 
+      padding: 4px 0 0 0;
+      margin: 0; 
+      color: @menu-item-second-title-color;
+      font-weight: normal;
+      text-shadow: 0 0 1px @black;
+      cursor: default;
+    }
+  }
+  
+  .actions {
+    padding: 7px 12px 0;
+    font-size: 18pt;
+    color: @menu-item-action-button-color;
+
+    &:hover {
+      color: @menu-item-action-button-hover-color;
+    }
+  }
+
+  &.idle {
+    background: rgba(149, 145, 42, 0.1);
+
+    &:hover {
+      background: rgba(149, 145, 42, 0.4);
+    }
+  }
+
+  &.inProgress {
+    background: rgba(149, 145, 42, 0.1);
+
+    &:hover {
+      background: rgba(149, 145, 42, 0.4);
+    }
+  }
+
+  &.ready {
+    background: rgba(42, 149, 65, 0.1);
+
+    &:hover {
+      background: rgba(42, 149, 65, 0.4);
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+}

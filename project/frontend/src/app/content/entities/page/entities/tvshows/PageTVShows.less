@@ -1,0 +1,41 @@
+.card {
+  max-width: 165px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  &__poster {
+    width: 165px;
+  }
+
+  &__year {
+    text-shadow: 0 0 4px #000;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  &__season {
+    text-shadow: 0 0 2px #fff;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+
+    &__header {
+      display: none;
+    }
+  }
+
+  .page {
+    max-width: 360px;
+  }
+}

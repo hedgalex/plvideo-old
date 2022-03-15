@@ -1,0 +1,40 @@
+@import '~app/content/Content.less';
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  &__title {
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 35pt;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: @menu-color;
+    text-shadow: 0 0 3px @black;
+  }
+
+  &__more {
+    display: block;
+    border-bottom: 1px solid #bbb;
+    background: #d8d8d8;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 0 0 0;
+
+    &:active {
+      background: #a9c7dd;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page__title {
+      padding: 140px 0;
+      
+  }
+}

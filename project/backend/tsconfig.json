@@ -1,0 +1,20 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "~server/*": ["./src/*"],
+      "~shared/*": ["../shared/*"]
+    },
+    "rootDirs": [
+      "./src",
+      "../shared"
+    ],
+  }
+}
