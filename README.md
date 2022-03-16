@@ -13,3 +13,5 @@ Build the frontend part (optional):
 `cd <path to project>/project/frontend && npm start`
 
 Run http://localhost:3000 in a browser.
+
+<img src="https://github.com/hedgalex/hedgalex/blob/main/mock_demo.png?raw=true" alt="Mock Demo" />
