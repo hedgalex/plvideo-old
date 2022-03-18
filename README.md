@@ -15,3 +15,7 @@ Build the frontend part (optional):
 Run http://localhost:3000 in a browser.
 
 <img src="https://github.com/hedgalex/hedgalex/blob/main/mock_demo.png?raw=true" alt="Mock Demo" />
+
+<img src="https://github.com/hedgalex/hedgalex/blob/main/capture1.png?raw=true" alt="Mock Demo 2" />
+<img src="https://github.com/hedgalex/hedgalex/blob/main/capture2.png?raw=true" alt="Mock Demo 3" />
+<img src="https://github.com/hedgalex/hedgalex/blob/main/capture3.png?raw=true" alt="Mock Demo 4" />
